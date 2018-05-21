@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GggYoutubeDataApi", "GggYoutubeDataApi\GggYoutubeDataApi.csproj", "{605ADD78-CFAC-45F8-9626-8ECA1A2965F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{707E1EDB-4FD1-441A-8AE3-A059691003D8}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GggYoutubeDataApiConsoleApp", "GggYoutubeDataApiConsoleApp\GggYoutubeDataApiConsoleApp.csproj", "{F85A0AFA-A4C5-433F-A1C4-B47EA6687242}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{605ADD78-CFAC-45F8-9626-8ECA1A2965F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{605ADD78-CFAC-45F8-9626-8ECA1A2965F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{605ADD78-CFAC-45F8-9626-8ECA1A2965F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{605ADD78-CFAC-45F8-9626-8ECA1A2965F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F85A0AFA-A4C5-433F-A1C4-B47EA6687242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F85A0AFA-A4C5-433F-A1C4-B47EA6687242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F85A0AFA-A4C5-433F-A1C4-B47EA6687242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F85A0AFA-A4C5-433F-A1C4-B47EA6687242}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0158812A-3D04-48C3-A878-2179C20CC169}
+	EndGlobalSection
+EndGlobal
