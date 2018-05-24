@@ -18,6 +18,7 @@ namespace GggYoutubeDataApi
             string result = await Videos.GetVideoWithPart(id, part);
             VideoResponse videoResponse = VideoResponse.FromString(result);
             LoggingManager.WriteLine(videoResponse.ToJsonString());
+            LoggingManager.CreateFile("GetVideo.txt", videoResponse.ToJsonString());
             Debugger.Break();
         }
         [TestMethod]
