@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Threading.Tasks;
+using GggYoutubeDataApi.Managers;
+using GggYoutubeDataApi.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace GggYoutubeDataApi
@@ -17,9 +19,7 @@ namespace GggYoutubeDataApi
             string part = "snippet,statistics";
             string result = await Videos.GetVideoWithPart(id, part);
             VideoResponse videoResponse = VideoResponse.FromString(result);
-            LoggingManager.WriteLine(videoResponse.ToJsonString());
-            LoggingManager.CreateFile("GetVideo.txt", videoResponse.ToJsonString());
-            Debugger.Break();
+            LoggingManager.CreateFile("GetVideo.txt", videoResponse);
         }
         [TestMethod]
         public async Task GetVideoWithFields2()
@@ -28,8 +28,7 @@ namespace GggYoutubeDataApi
             string fields = "items(id,snippet,statistics)";
             string part = "snippet,statistics";
             string result = await Videos.GetVideoWithFields(id, fields, part);
-            LoggingManager.WriteLine(result);
-            Debugger.Break();
+            LoggingManager.CreateFile("GetVideoWithFields2.txt", result);
         }
         [TestMethod]
         public async Task GetVideoWithFields()
@@ -38,8 +37,7 @@ namespace GggYoutubeDataApi
             string fields = "items(id,snippet,statistics)";
             string part = "snippet,statistics";
             string result = await Videos.GetVideoWithFields(id, fields, part);
-            LoggingManager.WriteLine(result);
-            Debugger.Break();
+            LoggingManager.CreateFile("GetVideoWithFields.txt", result);
         }
         [TestMethod]
         public async Task GetVideoWithPart2()
@@ -47,8 +45,7 @@ namespace GggYoutubeDataApi
             string id = "7lCDEYXw3mM";
             string part = "snippet,statistics";
             string result = await Videos.GetVideoWithPart(id, part);
-            LoggingManager.WriteLine(result);
-            Debugger.Break();
+            LoggingManager.CreateFile("GetVideoWithPart2.txt", result);
         }
         [TestMethod]
         public async Task GetVideoWithPart()
@@ -56,8 +53,7 @@ namespace GggYoutubeDataApi
             string id = "7lCDEYXw3mM";
             string part = "snippet,contentDetails,statistics,status";
             string result = await Videos.GetVideoWithPart(id, part);
-            LoggingManager.WriteLine(result);
-            Debugger.Break();
+            LoggingManager.CreateFile("GetVideoWithPart.txt", result);
         }
     }
 }
