@@ -41,11 +41,12 @@ namespace GggYoutubeDataApiConsoleApp
         private async Task Run()
         {
             // Create the service.
-            DiscoveryService service = new DiscoveryService(new BaseClientService.Initializer
+            BaseClientService.Initializer initializer = new BaseClientService.Initializer
             {
                 ApplicationName = "Discovery Sample",
                 ApiKey = CredentialsManager.GetApiKey(),
-            });
+            };
+            DiscoveryService service = new DiscoveryService(initializer);
             // Run the request.
             Console.WriteLine("Executing a list request...");
             DirectoryList result = await service.Apis.List().ExecuteAsync();
