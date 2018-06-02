@@ -1,6 +1,6 @@
 {
  "kind": "youtube#videoListResponse",
- "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/3KLDb_3Y9aBwhW14lxXKFMaZvZw\"",
+ "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/6tneJgQTymCG18JP6CiKG2g8c1s\"",
  "pageInfo": {
   "totalResults": 1,
   "resultsPerPage": 1
@@ -8,7 +8,7 @@
  "items": [
   {
    "kind": "youtube#video",
-   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/9Ho_K-8Lq8XaExo8Bql2jkJDv3M\"",
+   "etag": "\"DuHzAJ-eQIiCIp7p4ldoVcVAOeY/Wrvk5swOsj3bYX5yZ3qvf2NvyTU\"",
    "id": "7lCDEYXw3mM",
    "snippet": {
     "publishedAt": "2012-06-20T23:12:38.000Z",
@@ -46,7 +46,7 @@
     }
    },
    "statistics": {
-    "viewCount": "8561",
+    "viewCount": "8570",
     "likeCount": "47",
     "dislikeCount": "2",
     "favoriteCount": "0",

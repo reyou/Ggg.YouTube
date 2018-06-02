@@ -17,18 +17,18 @@ namespace GggYoutubeDataApi
         {
             string id = "7lCDEYXw3mM";
             string part = "snippet,statistics";
-            string result = await Videos.GetVideoWithPart(id, part);
+            string result = await Videos.GetVideo(id, part);
             VideoResponse videoResponse = VideoResponse.FromString(result);
             LoggingManager.CreateFile("GetVideo.txt", videoResponse);
         }
+
         [TestMethod]
-        public async Task GetVideoWithFields2()
+        public async Task GetVideoNoPart()
         {
             string id = "7lCDEYXw3mM";
-            string fields = "items(id,snippet,statistics)";
-            string part = "snippet,statistics";
-            string result = await Videos.GetVideoWithFields(id, fields, part);
-            LoggingManager.CreateFile("GetVideoWithFields2.txt", result);
+            string result = await Videos.GetVideo(id);
+            VideoResponse videoResponse = VideoResponse.FromString(result);
+            LoggingManager.CreateFile("GetVideoNoPart.txt", videoResponse);
         }
         [TestMethod]
         public async Task GetVideoWithFields()
@@ -36,7 +36,7 @@ namespace GggYoutubeDataApi
             string id = "7lCDEYXw3mM";
             string fields = "items(id,snippet,statistics)";
             string part = "snippet,statistics";
-            string result = await Videos.GetVideoWithFields(id, fields, part);
+            string result = await Videos.GetVideo(id, part, fields);
             LoggingManager.CreateFile("GetVideoWithFields.txt", result);
         }
         [TestMethod]
@@ -44,7 +44,7 @@ namespace GggYoutubeDataApi
         {
             string id = "7lCDEYXw3mM";
             string part = "snippet,statistics";
-            string result = await Videos.GetVideoWithPart(id, part);
+            string result = await Videos.GetVideo(id, part);
             LoggingManager.CreateFile("GetVideoWithPart2.txt", result);
         }
         [TestMethod]
@@ -52,7 +52,7 @@ namespace GggYoutubeDataApi
         {
             string id = "7lCDEYXw3mM";
             string part = "snippet,contentDetails,statistics,status";
-            string result = await Videos.GetVideoWithPart(id, part);
+            string result = await Videos.GetVideo(id, part);
             LoggingManager.CreateFile("GetVideoWithPart.txt", result);
         }
     }

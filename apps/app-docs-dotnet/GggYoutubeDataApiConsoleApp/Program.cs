@@ -4,7 +4,11 @@
     {
         static void Main(string[] args)
         {
-            DiscoveryServiceSample.Main2();
+            // DiscoveryServiceSample.Main2();
+            // PlaylistUpdates.Main2(null);
+            // MyUploads.Main2(null);
+            // Search.Main2(null);
+            UploadVideo.Main2(null);
         }
     }
 }

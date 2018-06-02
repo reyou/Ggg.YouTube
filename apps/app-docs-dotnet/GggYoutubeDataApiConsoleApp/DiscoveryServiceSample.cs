@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using GggYoutubeDataApi;
+using GggYoutubeDataApi.Managers;
 using Google.Apis.Discovery.v1;
 using Google.Apis.Discovery.v1.Data;
 using Google.Apis.Services;
@@ -22,7 +23,7 @@ namespace GggYoutubeDataApiConsoleApp
             }
             catch (AggregateException ex)
             {
-                foreach (var e in ex.InnerExceptions)
+                foreach (Exception e in ex.InnerExceptions)
                 {
                     Console.WriteLine("ERROR: " + e.Message);
                 }

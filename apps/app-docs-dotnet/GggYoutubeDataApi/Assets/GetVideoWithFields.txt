@@ -38,7 +38,7 @@
     }
    },
    "statistics": {
-    "viewCount": "8561",
+    "viewCount": "8570",
     "likeCount": "47",
     "dislikeCount": "2",
     "favoriteCount": "0",
