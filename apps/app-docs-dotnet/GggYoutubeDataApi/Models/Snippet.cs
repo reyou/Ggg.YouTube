@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GggYoutubeDataApi
+namespace GggYoutubeDataApi.Models
 {
     public class Snippet
     {

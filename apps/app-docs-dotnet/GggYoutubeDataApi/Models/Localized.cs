@@ -1,4 +1,4 @@
-﻿namespace GggYoutubeDataApi
+﻿namespace GggYoutubeDataApi.Models
 {
     public class Localized
     {

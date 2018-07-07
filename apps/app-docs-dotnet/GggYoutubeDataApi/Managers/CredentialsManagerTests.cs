@@ -1,8 +1,7 @@
 using System.Diagnostics;
-using GggYoutubeDataApi.Managers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace GggYoutubeDataApi
+namespace GggYoutubeDataApi.Managers
 {
     [TestClass]
     public class CredentialsManagerTests

@@ -2,6 +2,8 @@
 {
     public class YouTubeApi
     {
-        public static string ApiBase => "https://www.googleapis.com/youtube/v3/videos";
+
+
+        public static string ApiBase => "https://www.googleapis.com/youtube/v3";
     }
 }

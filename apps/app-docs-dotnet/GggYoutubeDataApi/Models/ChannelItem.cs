@@ -1,11 +1,10 @@
 ﻿namespace GggYoutubeDataApi.Models
 {
-    public class Item
+    public class ChannelItem
     {
         public string kind { get; set; }
         public string etag { get; set; }
-        public string id { get; set; }
+        public Id id { get; set; }
         public Snippet snippet { get; set; }
-        public Statistics statistics { get; set; }
     }
 }
