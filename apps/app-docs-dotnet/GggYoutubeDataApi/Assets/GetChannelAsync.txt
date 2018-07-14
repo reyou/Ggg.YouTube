@@ -1,0 +1,49 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "\"XI7nbFXulYBIpL0ayR_gDh3eu1k/OTE2tmnmPelOtA4BVpU4sG3OhMQ\"",
+  "nextPageToken": null,
+  "regionCode": "US",
+  "pageInfo": {
+    "totalResults": 3,
+    "resultsPerPage": 50
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "\"XI7nbFXulYBIpL0ayR_gDh3eu1k/ektKhD3TDExvOWGpm9NXreqZHug\"",
+      "id": {
+        "kind": "youtube#channel",
+        "videoId": null,
+        "playlistId": null
+      },
+      "snippet": {
+        "publishedAt": "2016-01-22T23:05:31Z",
+        "channelId": "UCJFp8uSYCjXOMnkUyb3CQ3Q",
+        "title": "Tasty",
+        "description": "Food that'll make you close your eyes, lean back, and whisper \"yessss.\" Snack-sized videos and recipes you'll want to try.",
+        "thumbnails": {
+          "default": {
+            "url": "https://yt3.ggpht.com/-oxJrRZowXmA/AAAAAAAAAAI/AAAAAAAAAAA/MKEBMQPf7hU/s88-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "width": 0,
+            "height": 0
+          },
+          "medium": {
+            "url": "https://yt3.ggpht.com/-oxJrRZowXmA/AAAAAAAAAAI/AAAAAAAAAAA/MKEBMQPf7hU/s240-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "width": 0,
+            "height": 0
+          },
+          "high": {
+            "url": "https://yt3.ggpht.com/-oxJrRZowXmA/AAAAAAAAAAI/AAAAAAAAAAA/MKEBMQPf7hU/s800-c-k-no-mo-rj-c0xffffff/photo.jpg",
+            "width": 0,
+            "height": 0
+          }
+        },
+        "channelTitle": "Tasty",
+        "tags": null,
+        "categoryId": null,
+        "liveBroadcastContent": "none",
+        "localized": null
+      }
+    }
+  ]
+}
