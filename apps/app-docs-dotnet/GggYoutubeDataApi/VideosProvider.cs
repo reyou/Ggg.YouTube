@@ -24,7 +24,7 @@ namespace GggYoutubeDataApi
         }
 
 
-        public static async Task<string> GetVideo(string id, string part = ChannelParts.Default, string fields = ChannelFields.Default)
+        public static async Task<string> GetVideo(string id, string part = ChannelPartParams.Default, string fields = ChannelFieldParams.Default)
         {
             StringBuilder url = new StringBuilder(YouTubeApi.ApiBase);
             url.Append("/videos?");
@@ -50,7 +50,7 @@ namespace GggYoutubeDataApi
         {
             if (string.IsNullOrEmpty(type))
             {
-                type = SearchTypes.Video;
+                type = SearchTypeParams.Video;
             }
             StringBuilder url = new StringBuilder(YouTubeApi.ApiBase);
             url.Append("/search?");
@@ -97,10 +97,10 @@ namespace GggYoutubeDataApi
         /// matching video, channel, and playlist
         /// </summary>
         /// <returns></returns>
-        public static async Task<string> GetChannelVideosAsync(string channelId, string part = ChannelParts.Default, string fields = ChannelFields.Default,
+        public static async Task<string> GetChannelVideosAsync(string channelId, string part = ChannelPartParams.Default, string fields = ChannelFieldParams.Default,
         string nextPageToken = "")
         {
-            return await GetChannelItemsAsync(SearchTypes.Video, new ChannelSearchParams()
+            return await GetChannelItemsAsync(SearchTypeParams.Video, new ChannelSearchParams()
             {
                 ChannelId = channelId,
                 Part = part,
@@ -109,10 +109,10 @@ namespace GggYoutubeDataApi
             });
         }
 
-        public static async Task<string> GetChannelAsync(string channelId, string part, string fields = ChannelFields.Default,
+        public static async Task<string> GetChannelAsync(string channelId, string part = ChannelPartParams.Default, string fields = ChannelFieldParams.Default,
         string nextPageToken = "")
         {
-            return await GetChannelItemsAsync(SearchTypes.Channel, new ChannelSearchParams()
+            return await GetChannelItemsAsync(SearchTypeParams.Channel, new ChannelSearchParams()
             {
                 ChannelId = channelId,
                 Part = part,
@@ -121,10 +121,10 @@ namespace GggYoutubeDataApi
             });
         }
 
-        public static async Task<string> SearchChannelsAsync(string keyword, string part, string fields = ChannelFields.Default,
+        public static async Task<string> SearchChannelsAsync(string keyword, string part = ChannelPartParams.Default, string fields = ChannelFieldParams.Default,
         string nextPageToken = "")
         {
-            return await GetChannelItemsAsync(SearchTypes.Channel, new ChannelSearchParams()
+            return await GetChannelItemsAsync(SearchTypeParams.Channel, new ChannelSearchParams()
             {
                 Keyword = keyword,
                 Part = part,

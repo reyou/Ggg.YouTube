@@ -1,6 +1,6 @@
 ﻿namespace GggYoutubeDataApi
 {
-    public class SearchTypes
+    public class SearchTypeParams
     {
         public const string Video = "video";
         public const string Channel = "channel";

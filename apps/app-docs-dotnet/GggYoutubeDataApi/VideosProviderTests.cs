@@ -55,7 +55,7 @@ namespace GggYoutubeDataApi
             List<ChannelItem> allChannelVideos = new List<ChannelItem>();
             do
             {
-                string result = await VideosProvider.GetChannelVideosAsync(channelId, ChannelParts.Default, "", nextPageToken);
+                string result = await VideosProvider.GetChannelVideosAsync(channelId, ChannelPartParams.Default, "", nextPageToken);
                 ChannelSearchResponse channelSearchResponse = ChannelSearchResponse.FromString(result);
                 if (targetCount > channelSearchResponse.pageInfo.totalResults)
                 {
@@ -88,7 +88,7 @@ namespace GggYoutubeDataApi
         public async Task GetVideo()
         {
             string id = "7lCDEYXw3mM";
-            string result = await VideosProvider.GetVideo(id, ChannelParts.Statistics);
+            string result = await VideosProvider.GetVideo(id, ChannelPartParams.Statistics);
             VideoResponse videoResponse = VideoResponse.FromString(result);
             LoggingManager.CreateFile("GetVideo.txt", videoResponse);
             Debugger.Break();
@@ -99,7 +99,7 @@ namespace GggYoutubeDataApi
         public async Task GetVideoWithFields()
         {
             string id = "7lCDEYXw3mM";
-            string result = await VideosProvider.GetVideo(id, ChannelParts.Statistics, ChannelFields.Statistics);
+            string result = await VideosProvider.GetVideo(id, ChannelPartParams.Statistics, ChannelFieldParams.Statistics);
             VideoResponse videoResponse = VideoResponse.FromString(result);
             LoggingManager.CreateFile("GetVideoWithFields.txt", videoResponse);
             Debugger.Break();
@@ -108,7 +108,7 @@ namespace GggYoutubeDataApi
         public async Task GetVideoWithPart2()
         {
             string id = "7lCDEYXw3mM";
-            string result = await VideosProvider.GetVideo(id, ChannelParts.Statistics);
+            string result = await VideosProvider.GetVideo(id, ChannelPartParams.Statistics);
             VideoResponse videoResponse = VideoResponse.FromString(result);
             LoggingManager.CreateFile("GetVideoWithPart2.txt", videoResponse);
             Debugger.Break();
@@ -117,7 +117,7 @@ namespace GggYoutubeDataApi
         public async Task GetVideoWithPart()
         {
             string id = "7lCDEYXw3mM";
-            string result = await VideosProvider.GetVideo(id, ChannelParts.ContentDetails);
+            string result = await VideosProvider.GetVideo(id, ChannelPartParams.ContentDetails);
             VideoResponse videoResponse = VideoResponse.FromString(result);
             LoggingManager.CreateFile("GetVideoWithPart.txt", videoResponse);
             Debugger.Break();

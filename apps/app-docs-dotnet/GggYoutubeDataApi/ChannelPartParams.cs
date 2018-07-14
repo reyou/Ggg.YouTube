@@ -1,6 +1,6 @@
 ﻿namespace GggYoutubeDataApi
 {
-    public class ChannelParts
+    public class ChannelPartParams
     {
         public const string Default = "snippet,id";
         public const string Statistics = "snippet,statistics";
